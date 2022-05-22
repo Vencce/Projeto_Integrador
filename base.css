@@ -1,0 +1,47 @@
+body {
+  color: white;
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-22/news/common/ratings-reveal/ratings-reveal-premier-league/premier-league-featured-image-16x9.png.adapt.crop191x100.628p.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header header"
+    "content content"
+    
+}
+
+
+
+#header {
+  grid-area: header;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 260px;
+  height: 260px;
+  border: 1px solid #0022b1;
+  border-radius: 15px;
+  
+  margin: 35px;
+  margin-top: 144px;
+}
+
+nav{
+  background-color: #0022b1;
+  opacity: 0.9;
+  color: white;
+}
+
